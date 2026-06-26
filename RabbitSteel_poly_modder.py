@@ -57,7 +57,7 @@ def merge_name_to_description(names_path, desc_path, output_path, source_lang="E
         writer.writeheader()
         writer.writerows(updated_rows)
         
-    msg = "完成！已建立檔案: {output_path}" if sys_lang == 'zh' else f"Done! Created file: {output_path}"
+    msg = f"完成！已建立檔案: {output_path}" if sys_lang == 'zh' else f"Done! Created file: {output_path}"
     print(msg)
 
 def language_selection() -> str:
